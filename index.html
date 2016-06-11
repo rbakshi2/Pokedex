@@ -56,7 +56,7 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#pokemon">Pokemon</a>
+                        <a class="page-scroll" href="#Pokemon">Pokemon</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#abilities">Abilities</a>
@@ -95,7 +95,7 @@
                 </div>
             </div>
             <div class="form">
-                <form action = "next-page.html" method = "get">
+                <form action = "#Pokemon" method = "get">
                         <input type="text" class="form-control" placeholder="Eg. Charizard, Squirtle" id="name" required data-validation-required-message="Please enter your name.">
                         <div class="col-lg-12 text-center">
                             <div id="success"></div>
@@ -115,7 +115,7 @@
                 </div>
             </div>
                 <div class="form">
-                    <form action = "next-page.html" method = "get">
+                    <form action = "#abilities" method = "get">
                             <input type="text" class="form-control" placeholder="Eg. Scrappy, Keen eye" id="name" required data-validation-required-message="Please enter your name.">
                             <div class="col-lg-12 text-center">
                             <div id="success"></div>
@@ -136,7 +136,7 @@
                 </div>
             </div>
                 <div class="form">
-                    <form action = "next-page.html" method = "get">
+                    <form action = "#items" method = "get">
                             <input type="text" class="form-control" placeholder="Eg. Itemfinder, Everstone" id="name" required data-validation-required-message="Please enter your name.">
                             <div class="col-lg-12 text-center">
                             <div id="success"></div>
@@ -156,11 +156,14 @@
                     <h2 class="section-heading">Check Type Advantage</h2>
                 </div>
             </div>
-            
-            <div class="form-group">
+            <div class="form">
+                <form action = "#type" method = "get">
                         <input type="text" class="form-control" placeholder="Eg. Fire, Water" id="name" required data-validation-required-message="Please enter your name.">
-                        <p class="help-block text-danger"></p>
-            </div>
+                        <div class="col-lg-12 text-center">
+                        <div id="success"></div>
+                        <button type="submit" value = "poke" class="btn btn-xl">Submit</button>            
+                    </div>
+                </form>
         </div>
     </section>
 
