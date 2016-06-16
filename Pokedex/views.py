@@ -32,7 +32,8 @@ def pokemon(request):
 
         message = '{0}, {1}'.format(pokemonn['name'], description['description'])
         image = '{0}{1}'.format(BASE_URL, sprite['image'])
-        html="<html><body> %s </html>" % message
+        html ="<html><body> <img src=\"%s\"> <br> %s <body> </html>" % (image, message)
+
         return HttpResponse(html)
 
 
