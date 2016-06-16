@@ -14,8 +14,10 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url
-from Pokedex.views import home_page
+from django.contrib import admin
+from Pokedex.views import *
 
 urlpatterns = [
-    url(r'^$', home_page)
+    url(r'^$', home_page),
+    url(r'^pokemon/', pokemon)
 ]
