@@ -17,7 +17,7 @@ def query_pokeapi(resource_uri):
 
 def pokemon(request):
 
-    body = request.GET.get("q")
+    body = request.GET.get("q", "Something went wrong")
     body = body.lower()
 
     pokemon_url = '/api/v1/pokemon/{0}/'.format(body)
