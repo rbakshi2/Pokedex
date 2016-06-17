@@ -19,5 +19,8 @@ from Pokedex.views import *
 
 urlpatterns = [
     url(r'^$', home_page),
-    url(r'^pokemon/', pokemon)
+    url(r'^pokemon/', pokemon),
+    url(r'^abilities/', abilities),
+    url(r'^type/', type),
+    #url(r'^items/', item)
 ]
