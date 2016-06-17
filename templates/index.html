@@ -116,11 +116,11 @@
                 </div>
             </div>
                 <div class="form">
-                    <form action = "#abilities" method = "get">
-                            <input type="text" class="form-control" placeholder="Eg. Scrappy, Keen eye" id="name" required data-validation-required-message="Please enter your name.">
+                    <form action = "abilities/" method = "get">
+                            <input name = "q" type="text" class="form-control" placeholder="Eg. Scrappy, Keen-eye" id="name" required data-validation-required-message="Please enter your name.">
                             <div class="col-lg-12 text-center">
-                            <div id="success"></div>
-                            <button type="submit" value = "poke" class="btn btn-xl">Submit</button>
+                                <div id="success"></div>
+                                <button type="submit" value = "poke" class="btn btn-xl">Submit</button>
                         </div>
                 </form>
                 </div>
@@ -137,8 +137,8 @@
                 </div>
             </div>
                 <div class="form">
-                    <form action = "#items" method = "get">
-                            <input type="text" class="form-control" placeholder="Eg. Itemfinder, Everstone" id="name" required data-validation-required-message="Please enter your name.">
+                    <form action = "item/" method = "get">
+                            <input name = "q" type="text" class="form-control" placeholder="Eg. Itemfinder, Everstone" id="name" required data-validation-required-message="Please enter your name.">
                             <div class="col-lg-12 text-center">
                             <div id="success"></div>
                             <button type="submit" value = "poke" class="btn btn-xl">Submit</button>
@@ -158,8 +158,8 @@
                 </div>
             </div>
             <div class="form">
-                <form action = "#type" method = "get">
-                        <input type="text" class="form-control" placeholder="Eg. Fire, Water" id="name" required data-validation-required-message="Please enter your name.">
+                <form action = "type/" method = "get">
+                        <input name = "q" type="text" class="form-control" placeholder="Eg. Fire, Water" id="name" required data-validation-required-message="Please enter your name.">
                         <div class="col-lg-12 text-center">
                         <div id="success"></div>
                         <button type="submit" value = "poke" class="btn btn-xl">Submit</button>
