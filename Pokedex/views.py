@@ -86,7 +86,9 @@ def type(request):
     type_url = '/api/v2/type/{0}/'.format(body)
     typee = query_pokeapi(type_url)
 
-    if typee:
+
+
+    '''if typee:
 
         typeee = typee['damage_relations']
         ndt_name = typeee['no_damage_to']
@@ -98,9 +100,11 @@ def type(request):
 
         name = typee['name']
         
-        html ="<html><body> <br> Name: %s <br>No damage to %s <br>half damage to %s <br>double damage to %s   <br>No damage from %s <br>half damage from %s <br>double damage from %s <body> </html>" % (name, ndt_name, hdt_name, ddt_name, ndf_name, hdf_name, ddf_name)
+        html ="<html><body> <br> Name: %s <br>No damage to %s <br>half damage to %s <br>double damage to %s   <br>No damage from %s <br>half damage from %s <br>double damage from %s <body> </html>" % (name, ndt_name, hdt_name, ddt_name, ndf_name, hdf_name, ddf_name)'''
 
-        return HttpResponse(html)
+    html="<html><body> %s</body></html>"%typee['name']
+
+    return HttpResponse(html)
 
 
 def home_page(request):
