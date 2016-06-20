@@ -1,0 +1,30 @@
+body {
+	font-family: "Lato", sans-serif;
+	color:	#ffffff;
+	font-weight: 300;
+}
+
+.text-thin {
+	font-weight: 100;
+}
+
+
+.main-image {
+	max-width: 100%;
+	margin-top: 300px;
+	height: auto;
+	display: block;
+}
+.sprite {
+	margin-top: 300px;
+}
+
+.main-text {
+	color : white;
+	margin-left: 500px;
+	margin-right: 500px;
+}
+
+.name {
+	color: #ffffff;
+}
